@@ -1,0 +1,36 @@
+doctype html
+html(lang="en")
+    head
+        include inc/head.pug
+
+    body
+        include inc/loader.pug
+
+        include inc/header-1.pug
+
+        // Breadcrumb Area
+        .breadcrumb-wrapper.bg-img.bg-overlay(style="background-image: url('img/bg-img/12.jpg');")
+            .container.h-100
+                .row.h-100.align-items-center
+                    .col-12
+                        .breadcrumb-content
+                            h2.breadcrumb-title Pricing Table
+                            nav(aria-label="breadcrumb")
+                                ol.breadcrumb.justify-content-center
+                                    li.breadcrumb-item
+                                        a(href="index.html") Home
+                                    li.breadcrumb-item.active(aria-current="page") Pricing
+
+        include inc/pricing-1.pug
+
+        include inc/cta-3.pug
+
+        include inc/pricing-3.pug
+
+        .mb-120.d-block
+
+        include inc/footer-1.pug
+
+        .mb-120.d-block
+
+        include inc/js-plugins.pug

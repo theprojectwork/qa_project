@@ -1,0 +1,19 @@
+// Newsletter Area
+.saasbox-newsletter-area
+    .container
+        .row
+            .col-12
+                .card.newsletter-card.shadow-lg.bg-text-gray.border-0.bg-img(style="background-image: url('img/core-img/4.png')")
+                    .card-body
+                        .text-center
+                            h2 Subscribe to our newsletter
+                            p.mb-5 Subscribe to our newsletter, we will notify you when we are live.
+                        form(action="#" method="POST")
+                            .row.justify-content-center
+                                .col-12.col-md-5
+                                    input.form-control(type="email" placeholder="Type your mail" aria-describedby="mailHelp")
+                                    small#mailHelp.text-muted.text-start
+                                        i.bi.bi-lock.me-1
+                                        | We'll never share your email with anyone else.
+                                .col-12.col-md-3
+                                    button.btn.btn-primary.w-100.mt-3.mt-md-0(type="submit") Subscribe Now

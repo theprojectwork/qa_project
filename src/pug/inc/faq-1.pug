@@ -1,0 +1,39 @@
+// FAQ Area
+.faq--area
+    .container
+        .row.g-4.g-lg-5.align-items-center
+            .col-12.col-md-7.col-lg-6
+                .faq-content
+                    h2.mb-5 Questions &amp; Answers
+                    
+                    .accordion.faq--accordian#faqaccordian
+                        // Single FAQ 
+                        .card.border-0
+                            .card-header#headingOne
+                                button.btn(type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne") How can I purchased Saasbox?
+                            
+                            .collapse.show#collapseOne(aria-labelledby="headingOne" data-bs-parent="#faqaccordian")
+                                .card-body
+                                    p Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt eiusmod.
+                        
+                        // Single FAQ 
+                        .card.border-0
+                            .card-header#headingTwo
+                                button.btn.collapsed(type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="true" aria-controls="collapseTwo") What are the minimum requirements?
+                            
+                            .collapse#collapseTwo(aria-labelledby="headingTwo" data-bs-parent="#faqaccordian")
+                                .card-body
+                                    p Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt eiusmod.
+                                
+                        // Single FAQ 
+                        .card.border-0
+                            .card-header#headingThree
+                                button.btn.collapsed(type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="true" aria-controls="collapseThree") What is the regular license?
+                            
+                            .collapse#collapseThree(aria-labelledby="headingThree" data-bs-parent="#faqaccordian")
+                                .card-body
+                                    p Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt eiusmod.
+                                    
+            .col-12.col-md-5.col-lg-6
+                .faq--thumbnail.ms-xl-5
+                    img(src="img/illustrator/3.png" alt="")

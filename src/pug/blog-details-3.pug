@@ -1,0 +1,138 @@
+doctype html
+html(lang="en")
+    head
+        include inc/head.pug
+
+    body
+        include inc/loader.pug
+
+        include inc/header-1.pug
+
+        // Scroll Indicator 
+        #scrollIndicator
+
+        // Breadcrumb 
+        .breadcrumb-wrapper.bg-img.bg-overlay(style="background-image: url('img/bg-img/7.jpg');")
+            .container.h-100
+                .row.h-100.align-items-center
+                    .col-12
+                        .breadcrumb-content
+                            h2.breadcrumb-title Blog Details 3
+                            nav(aria-label="breadcrumb")
+                                ol.breadcrumb.justify-content-center
+                                    li.breadcrumb-item
+                                        a(href="index.html") Home
+                                    li.breadcrumb-item.active(aria-current="page") Blog Details
+
+        .mb-120.d-block
+
+        // saasbox Blog Area
+        .saasbox-blog-area
+            .container
+                .row.justify-content-center.justify-content-md-between
+                    .col-12.col-md-7
+                        img.rounded.mb-4.mb-lg-5(src="img/bg-img/blog20.jpg" alt="")
+                        .post-date.mb-2 Oct 1, 2022
+                        h1.mb-3 Seven ways agency can improve your business.
+                        p Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequatur, animi, numquam. Nam suscipit iste enim deleniti vitae facere earum doloribus, tempora alias quas voluptatibus aut, voluptates qui nihil, quisquam quos.
+                        p Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolores quibusdam, nam porro cupiditate itaque doloribus commodi aut mollitia repellendus. Cum consequuntur nihil, itaque numquam aspernatur nisi quo soluta tempora rem?
+                        p Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet tempore officia, ab, pariatur harum quae cupiditate quia nisi atque qui tempora quis neque, molestiae doloribus repudiandae excepturi cum vero similique, aliquid laboriosam. Tempore vitae, quod rem architecto eum a dolores eveniet dolor aperiam hic alias suscipit, animi.
+                        h4.mb-3 The reason why everyone love business.
+                        p Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sapiente enim eligendi natus ratione, quia, illo reiciendis voluptas nostrum expedita eum libero. Officiis sapiente non, totam numquam dolor. Dolores qui impedit voluptatem accusamus odio modi mollitia reiciendis quod tenetur accusantium optio soluta excepturi adipisci quidem nobis, totam reprehenderit consectetur omnis, nemo ea voluptatum.
+                        p Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequuntur aliquam mollitia accusantium debitis dolore soluta temporibus, laborum, fuga tempora adipisci molestias. Nobis similique nulla eveniet incidunt reprehenderit nam, accusantium asperiores iure. Quas voluptatem, facere facilis repellat!
+                        p Lorem ipsum dolor sit amet, consectetur adipisicing elit. Blanditiis asperiores, quo suscipit quaerat deserunt ullam et ab, dolor, architecto totam culpa temporibus. Quo, quidem. Molestiae, deserunt impedit neque.
+
+                        // Post Tag & Share Button
+                        .post-tag-share-button.d-sm-flex.align-items-center.justify-content-between.my-5
+                            // Post Tags
+                            .post-tag.pt-3
+                                ul.d-flex.align-items-center.ps-0.list-unstyled.mb-0
+                                    li
+                                        a.btn.btn-info.btn-sm.me-2.rounded-pill(href="#") agency
+                                    li
+                                        a.btn.btn-info.btn-sm.me-2.rounded-pill(href="#") business
+                                    li
+                                        a.btn.btn-info.btn-sm.me-2.rounded-pill(href="#") studio
+
+                            // Share Button
+                            .share-button.pt-3
+                                a.ms-2(href="#")
+                                    i.bi.bi-facebook
+                                a.ms-2(href="#")
+                                    i.bi.bi-twitter
+                                a.ms-2(href="#")
+                                    i.bi.bi-slack
+
+                        // Comments Area
+                        .comment-wrapper.mb-50.clearfix
+                            h4.mb-5 03 Comments
+
+                            ol.ps-0.list-unstyled
+                                // Single Comment Area
+                                li.single-comment
+                                    .comment-content.d-flex
+                                        .comment-author
+                                            img(src="img/bg-img/t4.png" alt="author")
+                                        .comment-meta.py-2
+                                            .d-flex.align-items-center.justify-content-between
+                                                h6 Lim Jannat
+                                                a.post-date(href="#") 3h ago
+                                            p You've saved our business! Thanks guys, keep up the good work! The best on the net!
+                                            a.like(href="#") Like
+                                            a.reply(href="#") Reply
+
+                                    ol.children.list-unstyled
+                                        // Single Comment Area
+                                        li.single-comment
+                                            .comment-content.d-flex
+                                                .comment-author
+                                                    img(src="img/bg-img/t2.png" alt="author")
+                                                .comment-meta.py-2
+                                                    .d-flex.align-items-center.justify-content-between
+                                                        h6 Pryce R.
+                                                        a.post-date(href="#") 2h ago
+                                                    p I strongly recommend agency to EVERYONE interested in running a successful online business!
+                                                    a.like(href="#") Like
+                                                    a.reply(href="#") Reply
+
+                                // Single Comment Area
+                                li.single-comment
+                                    .comment-content.d-flex
+                                        .comment-author
+                                            img(src="img/bg-img/t3.png" alt="author")
+                                        .comment-meta.py-2
+                                            .d-flex.align-items-center.justify-content-between
+                                                h6 Juergen T.
+                                                a.post-date(href="#") 41min ago
+                                            p Absolutely wonderful! I wish I would have thought of it first. I would be lost without agency.
+                                            a.like(href="#") Like
+                                            a.reply(href="#") Reply
+
+                        .contact-area
+                            h4.mb-5 Leave A Comment
+
+                            form.contact-from(action="#" method="post")
+                                .row
+                                    .col-12.col-lg-6
+                                        input.form-control.mb-30(type="text" name="message-name" placeholder="Your Name")
+                                    .col-12.col-lg-6
+                                        input.form-control.mb-30(type="email" name="message-email" placeholder="Your Email")
+                                    .col-12
+                                        textarea.form-control.mb-30(name="message" placeholder="Type your comments...")
+                                    .col-12
+                                        button.btn.btn-primary(type="submit") Submit Comment
+
+                    .col-12.col-sm-8.col-md-5.col-lg-4.mt-120.mt-md-0
+                        include inc/sidebar.pug
+
+        .mb-120.d-block
+
+        include inc/cta-3.pug
+
+        .mb-120.d-block
+
+        include inc/footer-1.pug
+
+        .mb-120.d-block
+
+        include inc/js-plugins.pug

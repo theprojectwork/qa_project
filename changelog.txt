@@ -1,0 +1,44 @@
+Version: 2.0.0
+:: New Added: The whole code is wriiten with Vanilla JavaScript. No need jQuery dependency.
+:: Improved: Design Quality
+:: Improved: Code Quality
+:: Updated: Bootstrap v5.1.0 > Bootstrap v5.1.1
+:: Updated: Documentation
+
+Version: 1.8.0
+:: Updated: Bootstrap v5.0.0-beta1 > Bootstrap v5.1.0
+:: Fixed: Some Minor Issues
+
+Version: 1.7.0
+:: Updated: Bootstrap v5.0.0-alpha2 > Bootstrap v5.0.0-beta1
+:: Fixed: Some Minor Issues
+
+Version: 1.6.0
+:: Added: CSS Autoprefixer in npm (Now no need to use SCSS mixins for CSS prefix)
+:: Updated: Bootstrap 5.0.0-alpha1 > Bootstrap 5.0.0-alpha2
+:: Updated: Fonts Poppins > Fonts Inter
+
+Version: 1.5.0
+:: Updated: Bootstrap 4.5.0 > Bootstrap 5.0.0-alpha1
+:: Improved: Fixed Some Minor Bugs
+
+Version: 1.4.0
+:: Updated: Gulp 3.9.1 > Gulp 4
+
+Version: 1.3.0
+:: Updated: Bootstrap 4.3.1 > Bootstrap 4.5.0
+:: Updated: Contact Page
+
+Version: 1.2.0
+:: Fixed: Some Minor Issues
+
+Version: 1.1.0
+:: New Added 2 Home Demos
+:: Change Primary Color
+:: Update Design Quality
+
+Version: 1.0.1
+:: Top menu fixed on Safari Mac
+
+Version: 1.0.0
+:: Initial Realease

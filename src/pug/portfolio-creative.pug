@@ -1,0 +1,142 @@
+doctype html
+html(lang="en")
+    head
+        include inc/head.pug
+
+    body
+        include inc/loader.pug
+
+        include inc/header-1.pug
+
+        // Breadcrumb Area
+        .breadcrumb-wrapper.bg-fixed.bg-img.bg-overlay(style="background-image: url('img/bg-img/12.jpg');")
+            .container.h-100
+                .row.h-100.align-items-center
+                    .col-12
+                        .breadcrumb-content
+                            h2.breadcrumb-title Portfolio Creative
+                            nav(aria-label="breadcrumb")
+                                ol.breadcrumb.justify-content-center
+                                    li.breadcrumb-item
+                                        a(href="index.html") Home
+                                    li.breadcrumb-item.active(aria-current="page") Portfolio Full Width
+
+        // Portfolio Area
+        .saasbox-portfolio-area.creative-porfolio-line.pt-120.pb-120
+            span.line1
+            span.line2
+            span.line3
+            span.line4
+            span.line5
+            span.line6
+
+            .container
+                .filters-button-group.text-center.mb-70
+                    button.position-relative.btn.btn-primary.btn-sm.mx-1.mb-2.active(type="button" data-filter="*") All
+                    button.position-relative.btn.btn-primary.btn-sm.mx-1.mb-2(type="button" data-filter=".branding") Branding
+                    button.position-relative.btn.btn-primary.btn-sm.mx-1.mb-2(type="button" data-filter=".design") Design
+                    button.position-relative.btn.btn-primary.btn-sm.mx-1.mb-2(type="button" data-filter=".marketing") Marketing
+
+            .container-fluid.creative-porfolio-area
+                .row.saasbox-portfolio-filter.g-4.g-lg-5
+                    // Single Portfolio Area
+                    .col-12.col-sm-6.col-lg-4.portfolio-item.branding
+                        .single-portfolio-area
+                            img(src="img/bg-img/p7.jpg" alt="")
+
+                            // Ovarlay Content 
+                            .overlay-content
+                                .portfolio-title
+                                    h6.mb-0 Portfolio Title
+                                .portfolio-links
+                                    a.portfolio-img-zoom(href="img/bg-img/p7.jpg")
+                                        i.bi.bi-arrows-fullscreen
+                                    a(href="portfolio-details-one.html")
+                                        i.bi.bi-link-45deg
+
+                    // Single Portfolio Area
+                    .col-12.col-sm-6.col-lg-4.portfolio-item.branding
+                        .single-portfolio-area
+                            img(src="img/bg-img/p8.jpg" alt="")
+
+                            // Ovarlay Content 
+                            .overlay-content
+                                .portfolio-title
+                                    h6.mb-0 Portfolio Title
+                                .portfolio-links
+                                    a.portfolio-img-zoom(href="img/bg-img/p8.jpg")
+                                        i.bi.bi-arrows-fullscreen
+                                    a(href="portfolio-details-one.html")
+                                        i.bi.bi-link-45deg
+
+                    // Single Portfolio Area
+                    .col-12.col-sm-6.col-lg-4.portfolio-item.design
+                        .single-portfolio-area
+                            img(src="img/bg-img/p9.jpg" alt="")
+
+                            // Ovarlay Content 
+                            .overlay-content
+                                .portfolio-title
+                                    h6.mb-0 Portfolio Title
+                                .portfolio-links
+                                    a.portfolio-img-zoom(href="img/bg-img/p9.jpg")
+                                        i.bi.bi-arrows-fullscreen
+                                    a(href="portfolio-details-one.html")
+                                        i.bi.bi-link-45deg
+
+                    // Single Portfolio Area
+                    .col-12.col-sm-6.col-lg-4.portfolio-item.design
+                        .single-portfolio-area
+                            img(src="img/bg-img/p10.jpg" alt="")
+
+                            // Ovarlay Content 
+                            .overlay-content
+                                .portfolio-title
+                                    h6.mb-0 Portfolio Title
+                                .portfolio-links
+                                    a.portfolio-img-zoom(href="img/bg-img/p10.jpg")
+                                        i.bi.bi-arrows-fullscreen
+                                    a(href="portfolio-details-one.html")
+                                        i.bi.bi-link-45deg
+
+                    // Single Portfolio Area
+                    .col-12.col-sm-6.col-lg-4.portfolio-item.marketing
+                        .single-portfolio-area
+                            img(src="img/bg-img/p11.jpg" alt="")
+
+                            // Ovarlay Content 
+                            .overlay-content
+                                .portfolio-title
+                                    h6.mb-0 Portfolio Title
+                                .portfolio-links
+                                    a.portfolio-img-zoom(href="img/bg-img/p11.jpg")
+                                        i.bi.bi-arrows-fullscreen
+                                    a(href="portfolio-details-one.html")
+                                        i.bi.bi-link-45deg
+
+                    // Single Portfolio Area
+                    .col-12.col-sm-6.col-lg-4.portfolio-item.marketing
+                        .single-portfolio-area
+                            img(src="img/bg-img/p12.jpg" alt="")
+
+                            // Ovarlay Content 
+                            .overlay-content
+                                .portfolio-title
+                                    h6.mb-0 Portfolio Title
+                                .portfolio-links
+                                    a.portfolio-img-zoom(href="img/bg-img/p12.jpg")
+                                        i.bi.bi-arrows-fullscreen
+                                    a(href="portfolio-details-one.html")
+                                        i.bi.bi-link-45deg
+
+                .row
+                    .col-12
+                        // Load More Button
+                        .load-more-btn.text-center.mt-5
+                            a.btn.btn-primary(href="#") Load More
+
+        include inc/cta-3.pug
+
+        include inc/footer-2.pug
+
+        include inc/js-plugins.pug

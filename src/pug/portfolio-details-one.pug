@@ -1,0 +1,73 @@
+doctype html
+html(lang="en")
+    head
+        include inc/head.pug
+
+    body
+        include inc/loader.pug
+
+        include inc/header-2.pug
+
+        // Breadcrumb Area
+        .breadcrumb-wrapper.breadcrumb-bg-light
+            .container.h-100
+                .row.h-100.align-items-center
+                    .col-12
+                        .breadcrumb-content
+                            h2.breadcrumb-title Portfolio Details One
+                            nav(aria-label="breadcrumb")
+                                ol.breadcrumb.justify-content-center
+                                    li.breadcrumb-item
+                                        a(href="index.html") Home
+                                    li.breadcrumb-item.active(aria-current="page") Portfolio Details
+
+        .mb-120.d-block
+
+        // Portfolio Details Area
+        .portfolio-details-area.portfolio-content
+            .container
+                .row.justify-content-center
+                    .col-12.col-lg-7
+                        .section-heading.text-center
+                            h2 Enam Alamin
+                            p It's crafted with the latest trend of design &amp; coded with all modern approaches. It's a robust &amp; multi-dimensional usable template.
+
+                .row.justify-content-center            
+                    .col-12
+                        .project-details-shots.mb-80
+                            img.w-100.rounded(src="img/bg-img/p19.jpg" alt="")
+
+                    .col-12.col-md-10
+                        .project-details-content.mb-80
+                            h5 In brief:
+                            p There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden in the middle of text. All the Lorem Ipsum generators on the Internet tend to repeat predefined chunks as necessary.
+                            p.mb-0 Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quia maiores commodi nulla quidem quos ex natus aliquid dicta laboriosam temporibus, cum voluptate veritatis numquam similique perferendis nesciunt, quo maxime quis voluptates!
+
+                    .col-12.col-md-10
+                        .project-share-info
+                            a(href="#")
+                                i.bi.bi-facebook
+                            a(href="#")
+                                i.bi.bi-twitter
+                            a(href="#")
+                                i.bi.bi-linkedin
+                            a(href="#")
+                                i.bi.bi-slack
+                            a(href="#")
+                                i.bi.bi-youtube
+
+        .mb-120.d-block
+
+        include inc/related-items.pug
+
+        .mb-120.d-block
+
+        include inc/cta-1.pug
+
+        .mb-120.d-block
+
+        include inc/footer-1.pug
+
+        .mb-120.d-block
+
+        include inc/js-plugins.pug

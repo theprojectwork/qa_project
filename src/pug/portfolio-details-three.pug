@@ -1,0 +1,108 @@
+doctype html
+html(lang="en")
+    head
+        include inc/head.pug
+
+    body
+        include inc/loader.pug
+
+        include inc/header-2.pug
+
+        // Breadcrumb Area
+        .breadcrumb-wrapper.breadcrumb-bg-light
+            .container.h-100
+                .row.h-100.align-items-center
+                    .col-12
+                        .breadcrumb-content
+                            h2.breadcrumb-title Portfolio Details Three
+                            nav(aria-label="breadcrumb")
+                                ol.breadcrumb.justify-content-center
+                                    li.breadcrumb-item
+                                        a(href="index.html") Home
+                                    li.breadcrumb-item.active(aria-current="page") Portfolio Details
+
+        .mb-120.d-block
+
+        // Portfolio Details Area
+        .portfolio-details-area
+            .container
+                .row.align-items-end
+                    .col-12.col-sm-8.col-lg-6
+                        .section-heading
+                            h2 Enam Alamin
+                            p It's crafted with the latest trend of design &amp; coded with all modern approaches. It's a robust &amp; multi-dimensional usable template.
+
+                    .col-12.col-sm-4.col-lg-6
+                        .text-sm-end.mb-80
+                            a.btn.btn-info.rounded-pill(href="#") Live Demo
+
+                .row
+                    .col-12.col-md-4
+                        .mb-5
+                            h3 Date:
+                            p.mb-0 17 Oct 2022
+
+                        .mb-5
+                            h3 Client:
+                            p.mb-0 Enam Alamin
+
+                        .mb-5
+                            h3 Budget:
+                            p.mb-0 $1200
+
+                        .project-details-content.mb-5
+                            h5 Summary:
+                            p.mb-0 There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. If you are going to use a passage of Lorem Ipsum, you need to be sure there.
+
+                        .project-details-content.mb-5
+                            h5 Mission:
+                            p.mb-0 There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable.
+
+                        .project-share-info
+                            a(href="#")
+                                i.bi.bi-facebook
+                            a(href="#")
+                                i.bi.bi-twitter
+                            a(href="#")
+                                i.bi.bi-linkedin
+                            a(href="#")
+                                i.bi.bi-slack
+
+                    .col-12.col-md-8
+                        .project-details-shots.mt-5.mt-md-0
+                            .row.saasbox-portfolio-filter.g-4
+                                // Project Image 
+                                .col-12.col-sm-6.portfolio-item
+                                    .project-img
+                                        img(src="img/bg-img/p10.jpg" alt="")
+
+                                // Project Image 
+                                .col-12.col-sm-6.portfolio-item
+                                    .project-img
+                                        img(src="img/bg-img/p13.jpg" alt="")
+
+                                // Project Image 
+                                .col-12.col-sm-6.portfolio-item
+                                    .project-img
+                                        img(src="img/bg-img/p11.jpg" alt="")
+
+                                // Project Image 
+                                .col-12.col-sm-6.portfolio-item
+                                    .project-img
+                                        img(src="img/bg-img/p14.jpg" alt="")
+
+        .mb-120.d-block
+
+        include inc/related-items.pug
+
+        .mb-120.d-block
+
+        include inc/cta-3.pug
+
+        .mb-120.d-block
+
+        include inc/footer-1.pug
+
+        .mb-120.d-block
+
+        include inc/js-plugins.pug

@@ -1,0 +1,99 @@
+// Pricing Plan Area 
+.saasbox-pricing-plan-area.bg-gray.pt-120.pb-120
+  .container
+    .row.justify-content-center
+      .col-12.col-sm-10.col-md-9.col-lg-7
+        .section-heading.text-center
+          h6 Pricing Plan
+          h2 Simple &amp; transparent pricing plan for your team.
+          p It's crafted with the latest trend of design &amp; coded with all modern approaches. It's a robust &amp; multi-dimensional usable template.
+
+    .row
+      .col-12
+        .pricing-table-switch.mb-80.text-center.wow.fadeInUp(data-wow-duration="1000ms")
+          .form-check.form-switch.d-flex.align-items-center.justify-content-center.ps-0.mb-0
+            label.form-check-label.fz-16.fw-bold.me-3(for="priceSwitching") Monthly
+            input.form-check-input.ms-0.mt-0#priceSwitching(type="checkbox")
+            label.form-check-label.fz-16.fw-bold.ms-3.position-relative(for="priceSwitching") Yearly
+              span.badge.bg-danger.rounded.position-absolute -20%
+
+      .col-12
+          .row.g-0.justify-content-center
+
+            // Single Pricing Plan
+            .col-12.col-sm-9.col-md-7.col-lg-4
+              .card.pricing-card.monthly-plan.mb-30.wow.fadeInLeft(data-wow-duration="1000ms")
+                .pricing-heading.d-flex.justify-content-between.mb-5
+                  .price
+                    span.badge.bg-primary.rounded.fz-12 Basic
+                    .price-quantity
+                      h2.mb-0.monthly-price $3
+                        span.fz-12 per month
+                      h2.mb-0.yearly-price $28
+                        span.fz-12 per year (save 20%)
+                  
+                  .price-icon
+                    img(src="img/svg-icon/plant2.svg", alt="")
+
+                .pricing-desc.mb-5
+                  ul.list-unstyled.mb-0
+                    li 1 Month Usage
+                    li Lifetime Updates
+                    li.times 1 Website License
+                    li.times Free Support
+                    li.times Download New Release
+
+                .pricing-btn
+                  a.btn.btn-primary(href="cart.html") Choose Plan
+
+            // Single Pricing Plan
+            .col-12.col-sm-9.col-md-7.col-lg-4
+              .card.pricing-card.monthly-plan.active.mb-30
+                .pricing-heading.d-flex.justify-content-between.mb-5
+                  .price
+                    span.badge.bg-warning.rounded.fz-12 Standard
+                    .price-quantity
+                      h2.mb-0.monthly-price $9
+                        span.fz-12 per month
+                      h2.mb-0.yearly-price $86
+                        span.fz-12 per year (save 20%)
+                  
+                  .price-icon
+                    img(src="img/svg-icon/plant.svg", alt="")
+
+                .pricing-desc.mb-5
+                  ul.list-unstyled.mb-0
+                    li 1 Month Usage
+                    li Lifetime Updates
+                    li 1 Website License
+                    li.times Free Support
+                    li.times Download New Release
+
+                .pricing-btn
+                  a.btn.btn-warning(href="cart.html") Choose Plan
+
+            // Single Pricing Plan
+            .col-12.col-sm-9.col-md-7.col-lg-4
+              .card.pricing-card.monthly-plan.mb-30.wow.fadeInRight(data-wow-duration="1000ms")
+                .pricing-heading.d-flex.justify-content-between.mb-5
+                  .price
+                    span.badge.bg-info.rounded.fz-12 Pro
+                    .price-quantity
+                      h2.mb-0.monthly-price $21
+                        span.fz-12 per month
+                      h2.mb-0.yearly-price $199
+                        span.fz-12 per year (save 20%)
+                  
+                  .price-icon
+                    img(src="img/svg-icon/saving-money.svg", alt="")
+
+                .pricing-desc.mb-5
+                  ul.list-unstyled.mb-0
+                    li 1 Month Usage
+                    li Lifetime Updates
+                    li 1 Website License
+                    li Free Support
+                    li Download New Release
+
+                .pricing-btn
+                  a.btn.btn-info(href="cart.html") Choose Plan

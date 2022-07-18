@@ -1,0 +1,27 @@
+doctype html
+html(lang="en")
+  head
+    include inc/head.pug
+
+  body
+    include inc/loader.pug
+
+    include inc/header-2.pug
+
+    // Error Area
+    .saasbox-error-area
+      .container
+        .row.justify-content-center.align-items-center
+          .col-12.col-sm-10.col-md-9.col-lg-7
+            img.mb-5(src="img/illustrator/hero-7.png" alt="")
+            h5 Oops! Page not found
+            p We couldn't find any results for your search. Try again.
+            a.btn.btn-primary.mt-4(href="index.html") Back Home
+
+    .mb-120.d-block
+
+    include inc/footer-3.pug
+
+    .mb-5.d-block
+
+    include inc/js-plugins.pug

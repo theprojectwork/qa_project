@@ -1,0 +1,51 @@
+doctype html
+html(lang="en")
+    head
+        include inc/head.pug
+
+    body
+        include inc/loader.pug
+
+        // Logo 
+        .container
+            .logo-area.text-center.py-4
+                a(href="index.html")
+                    img(src="img/core-img/logo.png" alt="")
+
+        .container
+            .border
+
+        .mb-120.d-block
+
+        // Error 
+        .saasbox-coming-soon-area.text-center
+            .container
+                .row.justify-content-center.align-items-center
+                    .col-12.col-lg-7
+                        img.mb-80(src="img/illustrator/hero-8.png" alt="")
+                        h2 Coming Soon
+                        p We are getting back with an exciting stunning website.
+
+                        #comingSoonClock(data-date="04-12-2023" data-time="17:00")
+                            .day
+                                span.num
+                                span.word
+                            .hour
+                                span.num
+                                span.word
+                            .min
+                                span.num
+                                span.word
+                            .sec
+                                span.num
+                                span.word
+
+                        a.btn.btn-primary.mt-4(href="index.html") View Status
+
+        .mb-120.d-block
+
+        include inc/footer-3.pug
+
+        .mb-5.d-block
+
+        include inc/js-plugins.pug

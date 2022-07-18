@@ -1,0 +1,126 @@
+doctype html
+html(lang="en")
+    head
+        include inc/head.pug
+
+    body
+        include inc/loader.pug
+
+        include inc/header-1.pug
+
+        // Breadcrumb Area 
+        .breadcrumb-wrapper.bg-img.bg-overlay(style="background-image: url('img/bg-img/12.jpg');")
+            .container.h-100
+                .row.h-100.align-items-center
+                    .col-12
+                        .breadcrumb-content
+                            h2.breadcrumb-title Blog Two
+                            nav(aria-label="breadcrumb")
+                                ol.breadcrumb.justify-content-center
+                                    li.breadcrumb-item
+                                        a(href="index.html") Home
+                                    li.breadcrumb-item.active(aria-current="page") Blog
+
+        .mb-120.d-block
+
+        .saasbox-blog-area
+            .container
+                .row.justify-content-center.justify-content-lg-between.g-md-5
+                    .col-12.col-md-7
+                        .row.g-4.g-lg-5.justify-content-center
+                            // Blog Card 
+                            .col-12.col-sm-10.col-md-12
+                                .card.blog-card.border-0
+                                    a.image-wrap.d-block(href="blog-1.html")
+                                        img(src="img/bg-img/blog19.jpg" alt="")
+                                    .card-body.px-4.pb-0
+                                        a.badge.bg-primary.text-white.mb-1(href="blog-1.html") News
+                                        a.post-title.d-block.mb-3(href="blog-1.html") Seven ways agency can improve your business.
+                                        .post-meta
+                                            span.text-muted.fz-14
+                                                i.bi.bi-clock.me-2
+                                                | 2 min read
+
+                            // Blog Card 
+                            .col-12.col-sm-10.col-md-12
+                                .card.blog-card.border-0
+                                    a.image-wrap.d-block(href="blog-1.html")
+                                        img(src="img/bg-img/blog20.jpg" alt="")
+                                    .card-body.px-4.pb-0
+                                        a.badge.bg-primary.text-white.mb-1(href="blog-1.html") News
+                                        a.post-title.d-block.mb-3(href="blog-1.html") The reason why everyone love business.
+                                        .post-meta
+                                            span.text-muted.fz-14
+                                                i.bi.bi-clock.me-2
+                                                | 2 min read
+
+                            // Blog Card 
+                            .col-12.col-sm-10.col-md-12
+                                .card.blog-card.border-0
+                                    a.image-wrap.d-block(href="blog-1.html")
+                                        img(src="img/bg-img/blog21.jpg" alt="")
+                                    .card-body.px-4.pb-0
+                                        a.badge.bg-primary.text-white.mb-1(href="blog-1.html") News
+                                        a.post-title.d-block.mb-3(href="blog-1.html") Seven ways agency can improve your business.
+                                        .post-meta
+                                            span.text-muted.fz-14
+                                                i.bi.bi-clock.me-2
+                                                | 2 min read
+
+                            // Blog Card 
+                            .col-12.col-sm-10.col-md-12
+                                .card.blog-card.border-0
+                                    a.image-wrap.d-block(href="blog-1.html")
+                                        img(src="img/bg-img/blog22.jpg" alt="")
+                                    .card-body.px-4.pb-0
+                                        a.badge.bg-primary.text-white.mb-1(href="blog-1.html") News
+                                        a.post-title.d-block.mb-3(href="blog-1.html") The reason why everyone love business.
+                                        .post-meta
+                                            span.text-muted.fz-14
+                                                i.bi.bi-clock.me-2
+                                                | 2 min read
+
+                            // Blog Card 
+                            .col-12.col-sm-10.col-md-12
+                                .card.blog-card.border-0
+                                    a.image-wrap.d-block(href="blog-1.html")
+                                        img(src="img/bg-img/blog19.jpg" alt="")
+                                    .card-body.px-4.pb-0
+                                        a.badge.bg-primary.text-white.mb-1(href="blog-1.html") News
+                                        a.post-title.d-block.mb-3(href="blog-1.html") Seven ways agency can improve your business.
+                                        .post-meta
+                                            span.text-muted.fz-14
+                                                i.bi.bi-clock.me-2
+                                                | 2 min read
+
+                        // Pagination  
+                        .saasbox-pagination-area.my-5.mb-lg-0
+                            nav(aria-label="Page navigation example")
+                                ul.pagination.justify-content-center.mb-0
+                                    li.page-item.active
+                                        a.page-link(href="#") 1
+                                    li.page-item
+                                        a.page-link(href="#") 2
+                                    li.page-item
+                                        a.page-link(href="#") 3
+                                    li.page-item
+                                        a.page-link(href="#") 4
+                                    li.page-item
+                                        a.page-link(href="#") -
+                                    li.page-item
+                                        a.page-link(href="#") 9
+
+                    .col-12.col-sm-8.col-md-5.col-lg-4
+                        include inc/sidebar.pug
+
+        .mb-120.d-block
+
+        include inc/cta-3.pug
+
+        .mb-120.d-block
+
+        include inc/footer-1.pug
+
+        .mb-120.d-block
+
+        include inc/js-plugins.pug

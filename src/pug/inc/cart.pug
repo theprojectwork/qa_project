@@ -1,0 +1,117 @@
+// Cart Area
+.cart-area.clearfix
+    .container
+        // Apply Coupon 
+        .apply-coupon.mb-5
+            h4 Have a Coupon?
+            p Enter your coupon code here &amp; get awesome discounts!
+            .coupon-form
+                form.d-flex(action="#")
+                    input.form-control.rounded-0.rounded-start(type="text" placeholder="Enter Your Coupon Code")
+                    button.btn.btn-primary.rounded-0.rounded-end(type="submit") Apply
+        
+        .row
+            .col-12
+                // Cart Table 
+                .cart-table.mb-5
+                    .table-responsive
+                        table.table.table-bordered
+                            thead
+                                tr
+                                    th(scope="col")
+                                        i.bi.bi-trash
+                                    th Image
+                                    th Product
+                                    th Unit Price
+                                    th Quantity
+                                    th Total
+
+                            tbody
+                                tr
+                                    th(scope="row")
+                                        i.bi.bi-x
+                                    td
+                                        img(src="img/bg-img/shop1.jpg" alt="Product")
+                                    td
+                                        a(href="#") Bonsai Tree
+                                    td $0.99
+                                    td
+                                        input.qty-text(type="text" min="1" max="99" name="quantity" value="2")
+                                    td $1.98
+                                tr
+                                    th(scope="row")
+                                        i.bi.bi-x
+                                    td
+                                        img(src="img/bg-img/shop2.jpg" alt="Product")
+                                    td
+                                        a(href="#") Milk Biscuit
+                                    td $0.7
+                                    td
+                                        input.qty-text(type="text" min="1" max="99" name="quantity" value="1")
+                                    td $0.7
+                                tr
+                                    th(scope="row")
+                                        i.bi.bi-x
+                                    td
+                                        img(src="img/bg-img/shop3.jpg" alt="Product")
+                                    td
+                                        a(href="#") Bonsai Tree
+                                    td $0.5
+                                    td
+                                        input.qty-text(type="text" min="1" max="99" name="quantity" value="3")
+                                    td $1.5
+                                tr
+                                    th(scope="row")
+                                        i.bi.bi-x
+                                    td
+                                        img(src="img/bg-img/shop4.jpg" alt="Product")
+                                    td
+                                        a(href="#") Sony PS4
+                                    td $1.11
+                                    td
+                                        input.qty-text(type="text" min="1" max="99" name="quantity" value="7")
+                                    td $7.77
+                                tr
+                                    th(scope="row")
+                                        i.bi.bi-x
+                                    td
+                                        img(src="img/bg-img/shop5.jpg" alt="Product")
+                                    td
+                                        a(href="#") Beauty Line
+                                    td $2.99
+                                    td
+                                        input.qty-text(type="text" min="1" max="99" name="quantity" value="2")
+                                    td $5.98
+                                tr
+                                    th(scope="row")
+                                        i.bi.bi-x
+                                    td
+                                        img(src="img/bg-img/shop6.jpg" alt="Product")
+                                    td
+                                        a(href="#") Beauty
+                                    td $6.12
+                                    td
+                                        input.qty-text(type="text" min="1" max="99" name="quantity" value="1")
+                                    td $6.12
+
+            .col-12.col-sm-4.col-md-6.col-lg-7
+
+            .col-12.col-sm-8.col-md-6.col-lg-5
+                // Cart Total Area
+                .cart-total-area.ms-auto
+                    h4.mb-3 Cart Totals
+
+                    .table-responsive
+                        table.table.mb-4.table-bordered
+                            tbody
+                                tr
+                                    td.px-3 Sub Total
+                                    td.px-3 $24.05
+                                tr
+                                    td.px-3 Shipping
+                                    td.px-3 $2.00
+                                tr
+                                    td.px-3 Total
+                                    td.px-3 $26.05
+
+                    a.btn.btn-primary.w-100(href="checkout.html") Proceed To Checkout

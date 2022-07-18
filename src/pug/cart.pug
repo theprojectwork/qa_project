@@ -1,0 +1,34 @@
+doctype html
+html(lang="en")
+    head
+        include inc/head.pug
+
+    body
+        include inc/loader.pug
+
+        include inc/header-2.pug
+
+        // Breadcrumb Area
+        .breadcrumb-wrapper.breadcrumb-bg-light
+            .container.h-100
+                .row.h-100.align-items-center
+                    .col-12
+                        .breadcrumb-content
+                            h2.breadcrumb-title Cart
+                            nav(aria-label="breadcrumb")
+                                ol.breadcrumb.justify-content-center
+                                    li.breadcrumb-item
+                                        a(href="index.html") Home
+                                    li.breadcrumb-item.active(aria-current="page") Cart
+
+        .mb-120.d-block
+
+        include inc/cart.pug
+
+        .mb-120.d-block
+
+        include inc/cta-3.pug
+
+        include inc/footer-2.pug
+
+        include inc/js-plugins.pug

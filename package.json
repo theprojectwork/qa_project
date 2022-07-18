@@ -1,0 +1,38 @@
+{
+  "name": "saasbox-multipurpose-html-template-for-saas-and-agency",
+  "version": "2.0.0",
+  "description": "Saasbox - Multipurpose HTML template for Saas, Agency",
+  "main": "index.js",
+  "scripts": {
+    "gulp": "gulp"
+  },
+  "repository": {
+    "type": "",
+    "url": ""
+  },
+  "author": "Designing-World",
+  "license": "SEE LICENSE IN <license>",
+  "devDependencies": {
+    "autoprefixer": "^10.2.6",
+    "browserslist": "^4.16.6",
+    "gulp": "^4.0.2",
+    "gulp-concat": "^2.6.1",
+    "gulp-postcss": "^9.0.0",
+    "gulp-pug": "^5.0.0",
+    "gulp-sass": "^5.0.0",
+    "postcss": "^8.3.6",
+    "sass": "^1.36.0"
+  },
+  "dependencies": {
+    "baguettebox.js": "^1.11.1",
+    "bootstrap": "^5.1.1",
+    "bootstrap-icons": "^1.5.0",
+    "counterup2": "^2.0.2",
+    "flag-icon-css": "^3.4.2",
+    "imagesloaded": "^4.1.4",
+    "isotope-layout": "^3.0.6",
+    "mediabox": "^1.1.3",
+    "tiny-slider": "^2.9.3",
+    "wowjs": "^1.1.3"
+  }
+}

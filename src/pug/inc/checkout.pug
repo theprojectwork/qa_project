@@ -1,0 +1,133 @@
+// Checkout Area
+.checkout-area
+    .container
+        .row.g-5
+            // Checkout Details Area
+            .col-12.col-lg-6
+                .checkout-details-area
+                    h3.mb-4 Billing Details
+                    
+                    form(action="#" method="post")
+                        .row
+                            .col-12
+                                label.mb-2(for="first-name") First Name
+                                input.form-control.mb-30#first-name(type="text", placeholder="First Name", value="", required)
+
+                            .col-12
+                                label.mb-2(for="last-name") Last Name
+                                input.form-control.mb-30#last-name(type="text", placeholder="Last Name", value="", required)
+
+                            .col-12
+                                label.mb-2(for="company") Company Name
+                                input.form-control.mb-30#company(type="text", placeholder="Company", value="")
+
+                            .col-12
+                                label.mb-2(for="email-address") Email Address
+                                input.form-control.mb-30#email-address(type="email", placeholder="Email Address", value="", required)
+
+                            .col-12
+                                label.mb-2(for="phone") Phone
+                                input.form-control.mb-30#phone(type="text", placeholder="Phone", value="")
+
+                            .col-12
+                                label.mb-2(for="country") Country
+                                select.form-select.form-control.w-100.mb-30#country
+                                    option(value="usa") United States
+                                    option(value="usa") United Kingdom
+                                    option(value="usa") Germany
+                                    option(value="usa") India
+                                    option(value="usa") Australia
+                                    option(value="usa") Bangladesh
+
+                            .col-12
+                                label.mb-2(for="street-address") Street address
+                                input.form-control.mb-30#street-address(type="text" placeholder="Street Address" value="")
+
+                            .col-12
+                                label.mb-2(for="apartment-suite") Apartment/Suite/Unit
+                                input.form-control.mb-30#apartment-suite(type="text" placeholder="Apartment/Suite/Unit" value="")
+
+                            .col-12
+                                label.mb-2(for="city") Town/City
+                                input.form-control.mb-30#city(type="text" placeholder="Town/City" value="")
+
+                            .col-12
+                                label.mb-2(for="state") State
+                                input.form-control.mb-30#state(type="text" placeholder="State" value="")
+
+                            .col-12
+                                label.mb-2(for="postcode") Postcode/Zip
+                                input.form-control.mb-30#postcode(type="text" placeholder="Postcode/Zip" value="")
+
+                            .col-12
+                                label.mb-2(for="order-notes") Order Notes
+                                textarea.form-control#order-notes(placeholder="Notes about your order, e.g. special notes for delivery.", rows="3")
+
+            // Order Form Area
+            .col-12.col-lg-6
+                .order-form.bg-gray
+                    h4.mb-4 Your Order
+                    
+                    // Order Table
+                    .order-table.table-responsive.mb-4
+                        table.table.table-bordered
+                            thead
+                                tr
+                                    th.px-3 Product 
+                                    th.text-end.px-3 Total
+                            tbody
+                                tr
+                                    th.px-3 Bonsai Tree 
+                                        span  × 1
+                                    td.text-end.px-3 $9.63
+                                tr
+                                    th.px-3 Sony BS4 
+                                        span  × 1
+                                    td.text-end.px-3 $7.31
+                            tfoot
+                                tr
+                                    th.px-3 Subtotal 
+                                    td.text-end.px-3 $16.94
+                                tr
+                                    th.px-3 Shipping 
+                                    td.text-end.px-3 Flat Rate $5.00
+                                tr
+                                    th.px-3 Order Total 
+                                    td.text-end.px-3 $21.94
+                                    
+                    // Checkout Payment
+                    .checkout-payment-area
+                        form(action="#")
+                            .form-group
+                                .form-check
+                                    input.form-check-input#bank(type="radio", value="bank", name="checkout-payment" checked)
+                                    label.form-check-label.font-weight-bold(for="bank") Direct Bank Transfer
+                                .payment-meta
+                                    p Make your payment directly into our bank account.
+                        
+                            .form-group
+                                .form-check
+                                    input.form-check-input#cheque(type="radio", value="cheque", name="checkout-payment")
+                                    label.form-check-label.font-weight-bold(for="cheque") Cheque Payments
+                                .payment-meta
+                                    p Please send a check to Store Name, Store Street, Store Town, Store State/County, Store Postcode.
+                        
+                            .form-group
+                                .form-check
+                                    input.form-check-input#cash(type="radio", value="cash", name="checkout-payment")
+                                    label.form-check-label.font-weight-bold(for="cash") Cash On Delivery
+                                .payment-meta
+                                    p Pay with cash upon delivery.
+                        
+                            .form-group
+                                .form-check
+                                    input.form-check-input#paypal(type="radio", value="paypal", name="checkout-payment")
+                                    label.form-check-label.font-weight-bold(for="paypal") Payment via PayPal
+                                .payment-meta
+                                    p Pay with PayPal.
+                                    
+                            .form-group.mt-4
+                                p Your personal data will be used to process your order, support your experience throughout this website, and for other purposes described in our privacy policy.
+                            
+                            // Place Order
+                            button.btn.btn-primary.w-100.mt-4(type="submit") Place Order

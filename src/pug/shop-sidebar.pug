@@ -1,0 +1,212 @@
+doctype html
+html(lang="en")
+    head
+        include inc/head.pug
+
+    body
+        include inc/loader.pug
+
+        include inc/header-2.pug
+
+        // Breadcrumb Area
+        .breadcrumb-wrapper.breadcrumb-bg-light
+            .container.h-100
+                .row.h-100.align-items-center
+                    .col-12
+                        .breadcrumb-content
+                            h2.breadcrumb-title Shop with Sidebar
+                            nav(aria-label="breadcrumb")
+                                ol.breadcrumb.justify-content-center
+                                    li.breadcrumb-item
+                                        a(href="index.html") Home
+                                    li.breadcrumb-item.active(aria-current="page") Shop
+
+        .mb-120.d-block
+
+        // Shop Meta
+        .shop-meta.mb-5
+            .container
+                .row.g-4.g-lg-5.align-items-center
+                    .col-12.col-sm-6
+                        // Total Product View 
+                        .total-product-view.fw-bold
+                            | Viewing 
+                            span.counter 9 
+                            | products out of
+                            span  77
+                    .col-12.col-sm-6
+                        // Sorting Data 
+                        select.form-select.ms-sm-auto.fw-bold(aria-label="Default select example")
+                            option(selected) Popularity
+                            option(value="1") Newest
+                            option(value="2") Sales
+                            option(value="3") Ratings
+
+        .shop-with-sidebar
+            .container
+                .row
+                    .col-12.col-sm-5.col-md-4
+                        include inc/shop-sidebar.pug
+
+                    .col-12.col-sm-7.col-md-8                        
+                        .row.g-4.g-lg-5
+                            // Single Shop Card 
+                            .col-12.col-md-6
+                                .card.shop-card
+                                    .product-img-wrap
+                                        img.card-img-top(src="img/bg-img/shop1.jpg" alt="")
+                                        // Love Products
+                                        a.love-product.active(href="#" data-bs-toggle="tooltip" data-bs-placement="right" title="Liked")
+                                            i.bi.bi-heart
+                                    .product-meta.d-flex.align-items-center.justify-content-between.p-4
+                                        .product-name
+                                            h6 Bonsai Tree
+                                            h6.price.mb-0 $19.99
+                                        .product-add-to-cart
+                                            // Add To Cart
+                                            a(href="#")
+                                                i.bi.bi-cart
+
+                            // Single Shop Card
+                            .col-12.col-md-6
+                                .card.shop-card
+                                    .product-img-wrap
+                                        img.card-img-top(src="img/bg-img/shop2.jpg" alt="")
+                                        // Love Products
+                                        a.love-product(href="#" data-bs-toggle="tooltip" data-bs-placement="right" title="Like")
+                                            i.bi.bi-heart
+                                    .product-meta.d-flex.align-items-center.justify-content-between.p-4
+                                        .product-name
+                                            h6 Milk Cookie Biscuit
+                                            h6.price.mb-0 $8.58
+                                        .product-add-to-cart
+                                            // Add To Cart
+                                            a(href="#")
+                                                i.bi.bi-cart
+
+                            // Single Shop Card
+                            .col-12.col-md-6
+                                .card.shop-card
+                                    .product-img-wrap
+                                        img.card-img-top(src="img/bg-img/shop3.jpg" alt="")
+                                        // Love Products
+                                        a.love-product(href="#" data-bs-toggle="tooltip" data-bs-placement="right" title="Like")
+                                            i.bi.bi-heart
+                                    .product-meta.d-flex.align-items-center.justify-content-between.p-4
+                                        .product-name
+                                            h6 Bonsai Tree
+                                            h6.price.mb-0 $11.45
+                                        .product-add-to-cart
+                                            // Add To Cart
+                                            a(href="#")
+                                                i.bi.bi-cart
+
+                            // Single Shop Card
+                            .col-12.col-md-6
+                                .card.shop-card
+                                    .product-img-wrap
+                                        img.card-img-top(src="img/bg-img/shop4.jpg" alt="")
+                                        // Love Products
+                                        a.love-product(href="#" data-bs-toggle="tooltip" data-bs-placement="right" title="Like")
+                                            i.bi.bi-heart
+                                    .product-meta.d-flex.align-items-center.justify-content-between.p-4
+                                        .product-name
+                                            h6 Sony PS4 Original
+                                            h6.price.mb-0 $78.40
+                                        .product-add-to-cart
+                                            // Add To Cart
+                                            a(href="#")
+                                                i.bi.bi-cart
+
+                            // Single Shop Card
+                            .col-12.col-md-6
+                                .card.shop-card
+                                    .product-img-wrap
+                                        img.card-img-top(src="img/bg-img/shop5.jpg" alt="")
+                                        // Love Products
+                                        a.love-product.active(href="#" data-bs-toggle="tooltip" data-bs-placement="right" title="Liked")
+                                            i.bi.bi-heart
+                                    .product-meta.d-flex.align-items-center.justify-content-between.p-4
+                                        .product-name
+                                            h6 Young Living Patchouili
+                                            h6.price.mb-0 $16.65
+                                        .product-add-to-cart
+                                            // Add To Cart
+                                            a(href="#")
+                                                i.bi.bi-cart
+
+                            // Single Shop Card
+                            .col-12.col-md-6
+                                .card.shop-card
+                                    .product-img-wrap
+                                        img.card-img-top(src="img/bg-img/shop6.jpg" alt="")
+                                        // Love Products
+                                        a.love-product(href="#" data-bs-toggle="tooltip" data-bs-placement="right" title="Like")
+                                            i.bi.bi-heart
+                                    .product-meta.d-flex.align-items-center.justify-content-between.p-4
+                                        .product-name
+                                            h6 Onne Beauty
+                                            h6.price.mb-0 $12.30
+                                        .product-add-to-cart
+                                            // Add To Cart
+                                            a(href="#")
+                                                i.bi.bi-cart
+
+                            // Single Shop Card
+                            .col-12.col-md-6
+                                .card.shop-card
+                                    .product-img-wrap
+                                        img.card-img-top(src="img/bg-img/shop7.jpg" alt="")
+                                        // Love Products
+                                        a.love-product(href="#" data-bs-toggle="tooltip" data-bs-placement="right" title="Like")
+                                            i.bi.bi-heart
+                                    .product-meta.d-flex.align-items-center.justify-content-between.p-4
+                                        .product-name
+                                            h6 Camera Sticker
+                                            h6.price.mb-0 $6.50
+                                        .product-add-to-cart
+                                            // Add To Cart
+                                            a(href="#")
+                                                i.bi.bi-cart
+
+                            // Single Shop Card
+                            .col-12.col-md-6
+                                .card.shop-card
+                                    .product-img-wrap
+                                        img.card-img-top(src="img/bg-img/shop8.jpg" alt="")
+                                        // Love Products
+                                        a.love-product(href="#" data-bs-toggle="tooltip" data-bs-placement="right" title="Like")
+                                            i.bi.bi-heart
+                                    .product-meta.d-flex.align-items-center.justify-content-between.p-4
+                                        .product-name
+                                            h6 iPad
+                                            h6.price.mb-0 $300.98
+                                        .product-add-to-cart
+                                            // Add To Cart
+                                            a(href="#")
+                                                i.bi.bi-cart
+
+                        // Pagination Area
+                        .saasbox-pagination-area.mt-5
+                            nav(aria-label="Page navigation example")
+                                ul.pagination.justify-content-center.mb-0
+                                    li.page-item.active
+                                        a.page-link(href="#") 1
+                                    li.page-item
+                                        a.page-link(href="#") 2
+                                    li.page-item
+                                        a.page-link(href="#") 3
+                                    li.page-item
+                                        a.page-link(href="#") 4
+                                    li.page-item
+                                        a.page-link(href="#") ...
+                                    li.page-item
+                                        a.page-link(href="#") 9
+
+        .mb-120.d-block
+
+        include inc/cta-3.pug
+
+        include inc/footer-2.pug
+
+        include inc/js-plugins.pug

@@ -1,0 +1,75 @@
+doctype html
+html(lang="en")
+    head
+        include inc/head.pug
+
+    body
+        include inc/loader.pug
+
+        include inc/header-1.pug
+
+        // Breadcrumb 
+        .breadcrumb-wrapper.bg-img.bg-overlay(style="background-image: url('img/bg-img/12.jpg');")
+            .container.h-100
+                .row.h-100.align-items-center
+                    .col-12
+                        .breadcrumb-content
+                            h2.breadcrumb-title Login
+                            nav(aria-label="breadcrumb")
+                                ol.breadcrumb.justify-content-center
+                                    li.breadcrumb-item
+                                        a(href="index.html") Home
+                                    li.breadcrumb-item.active(aria-current="page")
+                                        a(href="#") Login
+        .mb-120.d-block
+
+        // Register 
+        .register-area
+            .container
+                .row.g-4.g-lg-5.align-items-center.justify-content-between
+                    // Thumbnail 
+                    .col-12.col-lg-6
+                        .register-thumbnail
+                            img(src="img/illustrator/hero-3.png" alt="")
+
+                    .col-12.col-lg-6
+                        .card.register-card.bg-gray.p-2.p-sm-4
+                            .card-body
+                                h4 Welcome Back!
+                                p Didn't have an account?
+                                    a.ms-2(href="register.html") Sign Up
+
+                                // Register Form 
+                                .register-form.my-4.my-lg-5
+                                    form(action="#" method="post")
+                                        .form-group.mb-3
+                                            input.form-control.rounded-0(type="email" placeholder="Email Address" required)
+                                        .form-group.mb-3
+                                            label.label-psswd(for="registerPassword") Show
+                                            input.form-control.rounded-0#registerPassword(type="password" placeholder="Password" required)
+                                        button.btn.btn-primary.w-100(type="submit")
+                                            i.bi.bi-unlock.me-2
+                                            | Login
+
+                                    .login-meta-data.d-flex.align-items-center.justify-content-between
+                                        .form-check.mt-3
+                                            input.form-check-input#rememberMe(type="checkbox", value="", checked)
+                                            label.form-check-label(for="rememberMe") Keep me logged in
+
+                                        a.forgot-password.mt-3(href="forget-password.html") Forgot Password?
+
+                                // Sign in via others 
+                                .signin-via-others
+                                    p.mb-0 Or Sign in with
+                                    a.btn.btn-primary.btn-sm.mt-3.me-3(href="#")
+                                        i.bi.bi-facebook.me-2
+                                        | Facebook
+                                    a.btn.btn-primary.btn-sm.mt-3.me-3(href="#")
+                                        i.bi.bi-twitter.me-2
+                                        | Twitter
+
+        .mb-120.d-block
+
+        include inc/footer-2.pug
+
+        include inc/js-plugins.pug

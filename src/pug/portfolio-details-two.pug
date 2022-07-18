@@ -1,0 +1,79 @@
+doctype html
+html(lang="en")
+    head
+        include inc/head.pug
+
+    body
+        include inc/loader.pug
+
+        include inc/header-2.pug
+
+        // Breadcrumb Area
+        .breadcrumb-wrapper.breadcrumb-bg-light
+            .container.h-100
+                .row.h-100.align-items-center
+                    .col-12
+                        .breadcrumb-content
+                            h2.breadcrumb-title Portfolio Details Two
+                            nav(aria-label="breadcrumb")
+                                ol.breadcrumb.justify-content-center
+                                    li.breadcrumb-item
+                                        a(href="index.html") Home
+                                    li.breadcrumb-item.active(aria-current="page") Portfolio Details
+
+        .mb-120.d-block
+
+        // Portfolio Details Area 
+        .portfolio-details-area.portfolio-content
+            .container
+                .row.justify-content-center
+                    .col-12.col-sm-9.col-lg-7
+                        .section-heading.text-center
+                            h2 Enam Alamin
+                            p It's crafted with the latest trend of design &amp; coded with all modern approaches. It's a robust &amp; multi-dimensional usable template.
+
+                .row.g-4.g-lg-5.justify-content-center
+                    .col-12.col-sm-6.col-md-4
+                        .project-card.text-center
+                            span 01
+                            h3 Date:
+                            p.mb-0 17 Oct 2022
+
+                    .col-12.col-sm-6.col-md-4
+                        .project-card.text-center
+                            span 02
+                            h3 Client:
+                            p.mb-0 Enam Alamin
+
+                    .col-12.col-sm-6.col-md-4
+                        .project-card.text-center
+                            span 03
+                            h3 Project Link:
+                            p.mb-0
+                                a(href="#" target="_blank") enamalamin.com                        
+                .row
+                    .col-12
+                        .project-details-shots.mb-80.mt-5
+                            img.rounded(src="img/bg-img/p19.jpg" alt="")
+
+                .row.justify-content-center.g-5
+                    .col-12.col-md-6
+                        .project-details-content
+                            h5 Vision:
+                            p.mb-0 There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden in the middle of text. All the Lorem Ipsum generators on the Internet tend to repeat predefined chunks as necessary.
+                    .col-12.col-md-6
+                        .project-details-content
+                            h5 Mission:
+                            p.mb-0 There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden in the middle of text. All the Lorem Ipsum generators on the Internet tend to repeat predefined chunks as necessary.
+
+        .mb-120.d-block
+
+        include inc/related-items.pug
+
+        .mb-120.d-block
+
+        include inc/footer-1.pug
+
+        .mb-120.d-block
+
+        include inc/js-plugins.pug
